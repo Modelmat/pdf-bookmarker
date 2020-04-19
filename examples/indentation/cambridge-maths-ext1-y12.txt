@@ -1,0 +1,163 @@
+Rationale - Extension 1 Year 12 vii
+Overview xxi
+Acknowledgements xxiv
+About the authors xxv
+1 Sequences and series 1
+    1A Sequences and how to specify them 2
+    1B Arithmetic sequences 8
+    1C Geometric sequences 13
+    1D Solving problems involving APs and GPs 20
+    1E Adding up the terms of a sequence 25
+    1F Summing an arithmetic series 30
+    1G Summing a geometric series 36
+    1H The limiting sum of a geometric series 41
+    1I Recurring decimals and geometric series 47
+    Chapter 1 Review 50
+2 Mathematical induction 53
+    2A Using mathematical induction for series 54
+    2B Proving divisibility by mathematical induction 59
+    Chapter 2 Review 62
+3 Graphs and equations 63
+    3A The sign of a function 64
+    3B Vertical and horizontal asymptotes 71
+    3C A curve-sketching menu 77
+    3D Solving inequations 83
+    3E Using graphs to solve equations and inequations 88
+    3F Regions in the coordinate plane 95
+    3G Review of translations and refl ections 101
+    3H Dilations 105
+    3I Combinations of transformations 112
+    3J Trigonometric graphs 118
+    Chapter 3 Review 127
+4 Curve-sketching using the derivative 130
+    4A Increasing, decreasing and stationary at a point 131
+    4B Stationary points and turning points 136
+    4C Some less familiar curves 142
+    4D Second and higher derivatives 148
+    4E Concavity and points of infl ection 150
+    4F Systematic curve sketching with the derivative 157
+    4G Global maximum and minimum 162
+    4H Applications of maximisation and minimisation 165
+    4I Maximisation and minimisation in geometry 172
+    4J Primitive functions 176
+    Chapter 4 Review 182
+5 Integration 186
+    5A Areas and the defi nite integral 187
+    5B The fundamental theorem of calculus 197
+    5C The defi nite integral and its properties 205
+    5D Proving the fundamental theorem 214
+    5E The indefi nite integral 221
+    5F Finding areas by integration 228
+    5G Areas of compound regions 237
+    5H The trapezoidal rule 244
+    5I The reverse chain rule 254
+    Chapter 5 Review 261
+6 The exponential and logarithmic functions 264
+    6A Review of exponential functions base e 265
+    6B Differentiation of exponential functions 270
+    6C Applications of differentiation 276
+    6D Integration of exponential functions 282
+    6E Applications of integration 289
+    6F Review of logarithmic functions 295
+    6G Differentiation of logarithmic functions 302
+    6H Applications of differentiation of loge x 309
+    6I Integration of the reciprocal function 315
+    6J Applications of integration of 1/x 324
+    6K Calculus with other bases 329
+    Chapter 6 Review 336
+7 The trigonometric functions 340
+    7A The behaviour of sin x near the origin 341
+    7B Differentiating the trigonometric functions 347
+    7C Applications of differentiation 359
+    7D Integrating the trigonometric functions 367
+    7E Applications of integration 377
+    Chapter 7 Review 383
+8 Vectors 386
+    8A Directed intervals and vectors 387
+    8B Components and column vectors 397
+    8C The dot product (or scalar product) 404
+    8D Geometric problems 412
+    8E Projections 416
+    8F Applications to physical situations 420
+    Chapter 8 Review 426
+9 Motion and rates 429
+    9A Average velocity and speed 430
+    9B Velocity and acceleration as derivatives 438
+    9C Integrating with respect to time 449
+    9D Rates and differentiation 457
+    9E Review of related rates 465
+    9F Rates and integration 469
+    Chapter 9 Review 475
+10 Projectile motion 479
+    10A Projectile motion — the time equations 480
+    10B Projectile motion — the equation of path 488
+    Chapter 10 Review 493
+11 Trigonometric equations 496
+    11A Equations involving compound angles 497
+    11B The sum of sine and cosine functions 503
+    11C Using the t-formula to solve equations 510
+    Chapter 11 Review 514
+12 Further calculus 515
+    12A Inverse trigonometric functions — differentiating 516
+    12B Inverse trigonometric functions — integrating 523
+    12C Further trigonometric integrals 531
+    12D Integration by substitution 535
+    12E Further integration by substitution 540
+    12F Volumes of rotation 544
+    Chapter 12 Review 551
+13 Differential equations 554
+    13A Differential equations 555
+    13B Slope fields 566
+    13C Separable differentiable equations 579
+    13D y ' = g(y ) and the logistic equation 586
+    13E Applications of differential equations 597
+    Chapter 13 Review 606
+14 Series and finance 611
+    14A Applications of APs and GPs 612
+    14B The use of logarithms with GPs 619
+    14C Simple and compound interest 624
+    14D Investing money by regular instalments 631
+    14E Paying off a loan 640
+    Chapter 14 Review 650
+15 Displaying and interpreting data 653
+    15A Displaying data 654
+    15B Grouped data and histograms 668
+    15C Quartiles and interquartile range 679
+    15D Bivariate data 687
+    15E Formulae for correlation and regression 697
+    15F Using technology with bivariate data 701
+    Chapter 15 Review 709
+16 Continuous probability distributions 712
+    16A Relative frequency 713
+    16B Continuous distributions 724
+    16C Mean and variance of a distribution 737
+    16D The standard normal distribution 742
+    16E General normal distributions 754
+    16F Applications of the normal distribution 763
+    16G Investigations using the normal distribution 766
+    Chapter 16 Review 772
+    Appendix: The standard normal distribution 774
+17 Binomial distributions 775
+    17A Binomial probability 776
+    17B Binomial distributions 785
+    17C Normal approximations to a binomial 797
+    17D Sample proportions 809
+    Chapter 17 Review 821
+Answers 824
+    Chapter 1 824
+    Chapter 2 830
+    Chapter 3 831
+    Chapter 4 854
+    Chapter 5 862
+    Chapter 6 868
+    Chapter 7 881
+    Chapter 8 885
+    Chapter 9 887
+    Chapter 10 895
+    Chapter 11 896
+    Chapter 12 898
+    Chapter 13 901
+    Chapter 14 910
+    Chapter 15 914
+    Chapter 16 925
+    Chapter 17 933

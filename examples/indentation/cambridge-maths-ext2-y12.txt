@@ -1,0 +1,67 @@
+Introduction v
+Rationale vi
+About the authors ix
+1 Complex numbers I 1
+    1A The arithmetic of complex numbers 1
+    1B Quadratic equations 10
+    1C The Argand diagram 18
+    1D Modulus-argument form 22
+    1E Vectors and the complex plane 30
+    1F Curves and regions in the Argand diagram 37
+    1G Polynomials and complex numbers 45
+    1H Chapter review exercise 54
+2 Proof 56
+    2A The language of proof 56
+    2B Number proofs 66
+    2C Proof by contraposition and by contradiction 70
+    2D Algebraic inequalities 74
+    2E Induction 80
+    2F Inequalities in geometry and calculus 86
+    2G Chapter review exercise 93
+    Appendix: The fundamental theorem of arithmetic 95
+3 Complex numbers II: de Moivre and Euler 98
+    3A Powers of complex numbers 98
+    3B Trigonometric identities 101
+    3C Roots of complex numbers 105
+    3D Exponential form: Euler’s formula 111
+    3E Applications of exponential form 119
+    3F Chapter review exercise 123
+4 Integration 125
+    4A The standard integrals 125
+    4B Algebraic manipulation 127
+    4C Substitution 129
+    4D Partial fractions 134
+    4E Denominators with quadratics 141
+    4F Integration by parts 145
+    4G Trigonometric integrals 150
+    4H Reduction formulae 156
+    4I Miscellaneous integrals 161
+    4J Chapter review exercise 164
+    Appendix: A short table of integrals 166
+5 Vectors 167
+    5A Coordinates in three dimensions 167
+    5B Vectors in three dimensions 173
+    5C The dot product 179
+    5D Applications of the dot product 185
+    5E Vector proofs in geometry 191
+    5F The vector equation of a line 193
+    5G Vector equations of circles, spheres and planes 204
+    5H Chapter review exercise 213
+    Appendix: Some Geometry in 3D 215
+6 Mechanics 218
+    6A Forces and acceleration 218
+    6B Simple harmonic motion and time 226
+    6C Simple harmonic motion and displacement 235
+    6D Horizontal resisted motion 242
+    6E Vertical resisted motion 248
+    6F Projectile motion 257
+    6G Miscellaneous problems 265
+    6H Chapter review exercise 274
+Answers 279
+    Chapter 1 279
+    Chapter 2 286
+    Chapter 3 289
+    Chapter 4 290
+    Chapter 5 293
+    Chapter 6 296
+Index 301

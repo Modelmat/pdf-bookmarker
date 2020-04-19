@@ -144,7 +144,7 @@ About the authors xxiv
     15D Identities in Pascal's triangle 734
     15E Enrichment - using the general term 740
     Chapter 15 Review 743
-17 Further rates 745
+16 Further rates 745
     16A Related rates 746
     16B Exponential growth and decay 752
     16C Modified natural growth and decay 760
@@ -159,3 +159,20 @@ About the authors xxiv
     17G Products to sums 805
     Chapter 17 Review 808
 Answers 812
+    Chapter 1 812
+    Chapter 2 817
+    Chapter 3 820
+    Chapter 4 835
+    Chapter 5 849
+    Chapter 6 864
+    Chapter 7 868
+    Chapter 8 872
+    Chapter 9 879
+    Chapter 10 890
+    Chapter 11 895
+    Chapter 12 903
+    Chapter 13 909
+    Chapter 14 914
+    Chapter 15 920
+    Chapter 16 924
+    Chapter 17 926
