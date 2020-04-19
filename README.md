@@ -9,20 +9,22 @@ a table of contents tree from a flat tree (see the example table of contents tex
 which is then converted into a `.ps` file to be added to a PDF through `gs`.
 
 ## Usage
-**TODO**: none of these work, script must be modified manually
-**TODO**: allow adjustable page offset (roman numerals -> normal numbers, or just general offset)
+**TODO**: Document how to add custom level functions through python module.
 
-Generates a .ps file from a flat table of contents tree
-```py
-python bookmarker.py generate-ps --input=table-of-contents.txt --output=bookmarks.ps
+### Example 1: Bookmark using Indentation Level
+This is the default style.
+```bash
+$ python bookmarker.py examples/indentation/cambridge-maths-ext1-y11.txt \
+    input.pdf out.pdf \
+    --title="Cambridge Mathematics Extension 1 Year 11" \
+    --author="Bill Pender et al"
 ```
 
-Adds a postscript file bookmarks to a PDF. Runs ghostscripts behind the scenes.
-```py
-python bookmarker.py apply-ps --ps=bookmarks.ps --pdf=coding-tutorial.pdf --output=awesome-coding-tutorial.pdf
-```
-
-Generates the postscript file and then applies it
-```py
-python bookmarker.py add-bookmarks --input=table-of-contents.txt --pdf=coding-tutorial.pdf --output=awesome-coding-tutorial.pdf
+### Example 2: Bookmark using regex style 1
+```bash
+$ python bookmarker.py examples/regex/programming-principles-and-practice-using-c++.txt \
+    input.pdf out.pdf \
+    --title="Programming Principles and Practice Using C++" \
+    --author="Bjarne Stroustrup" \
+    --style=regex-1
 ```

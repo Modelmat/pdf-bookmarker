@@ -1,0 +1,161 @@
+Rationale viii
+Overview xx
+Acknowledgements xxiii
+About the authors xxiv
+1 Methods in algebra 1
+    1A Arithmetic with pronumerals 2
+    1B Expanding brackets 6
+    1C Factoring 10
+    1D Algebraic fractions 14
+    1E Solving linear equations 20
+    1F Solving quadratic equations 23
+    1G Solving simultaneous equations 27
+    1H Completing the square 30
+    Chapter 1 Review 33
+2 Numbers and surds 35
+    2A Whole numbers, integers and rationals 36
+    2B Real numbers and approximations 42
+    2C Surds and their arithmetic 48
+    2D Further simplification of surds 51
+    2E Rationalising the denominator 54
+    Chapter 2 Review 58
+3 Functions and graphs 61
+    3A Functions and function notation 62
+    3B Functions, relations and graphs 66
+    3C Review of linear graphs 73
+    3D Quadratics functions — factoring and the graph 78
+    3E Completing the square and the graph 85
+    3F The quadratic formulae and the graph 94
+    3G Powers, polynomials and circles 99
+    3H Two graphs that have asymptotes 106
+    3I Four types of relations 113
+    Chapter 3 Review 121
+4 Transformations and symmetry 124
+    4A Translations of known graphs 125
+    4B Reflections in the x-axis and y-axis 134
+    4C Even and odd symmetry 141
+    4D The absolute value function 146
+    4E Composite functions 153
+    Chapter 4 Review 158
+5 Further graphs 162
+    5A Solving inequations 163
+    5B The sign of a function 170
+    5C Reciprocals and asymptotes 177
+    5D Graphing sums and products 184
+    5E Absolute value and square roots 194
+    5F Inverse relations and functions 202
+    5G Inverse function notation 209
+    5H Defining functions and relations parametrically 214
+    Chapter 5 Review 220
+6 Trigonometry 224
+    6A Trigonometry with right-angled triangles 225
+    6B Problems involving right-angled triangles 232
+    6C Three-dimensional trigonometry 238
+    6D Trigonometric functions of a general angle 245
+    6E Quadrant, sign, and related acute angle 250
+    6F Given one trigonometric function, find another 258
+    6G Trigonometric identities 262
+    6H Trigonometric equations 268
+    6I The sine rule and the area formula 274
+    6J The cosine rule 283
+    6K Problems involving general triangles 290
+    Chapter 6 Review 296
+7 The coordinate plane 302
+    7A Lengths and midpoints of intervals 303
+    7B Gradients of intervals and lines 308
+    7C Equations of lines 317
+    7D Further equations of lines 322
+    7E Using pronumerals in place of numbers 328
+    Chapter 7 Review 332
+8 Exponential and logarithmic functions 334
+    8A Indices 335
+    8B Fractional indices 343
+    8C Logarithms 349
+    8D The laws for logarithms 354
+    8E Equations involving logarithms and indices 359
+    8F Exponential and logarithmic graphs 365
+    8G Applications of these functions 371
+    Chapter 8 Review 376
+9 Differentiation 378
+    9A Tangents and the derivative 379
+    9B The derivative as a limit 385
+    9C A rule for differentiating powers of x 391
+    9D The notation dy/dx for the derivative 399
+    9E The chain rule 406
+    9F Differentiating powers with negative indices 414
+    9G Differentiating powers with fractional indices 419
+    9H The product rule 424
+    9I The quotient rule 428
+    9J Rates of change 432
+    9K Continuity 440
+    9L Differentiability 445
+    Chapter 9 Review 449
+10 Polynomials 452
+    10A The language of polynomials 453
+    10B Graphs of polynomial functions 459
+    10C Division of polynomials 464
+    10D The remainder and factor theorems 468
+    10E Consequences of the factor theorem 473
+    10F Sums and products of zeroes 480
+    10G Multiple zeroes 490
+    10H Geometry using polynomial techniques 495
+    Chapter 10 Review 500
+11 Extending calculus 503
+    11A The exponential function base e 504
+    11B Transformations of exponential functions 510
+    11C Differentiation of exponential functions 514
+    11D Differentiation and the graph 517
+    11E The logarithmic function base e 522
+    11F Exponential rates using the base e 528
+    11G Radian measure of angle size 531
+    11H Solving trigonometric equations 538
+    11I Arcs and sectors of circles 543
+    11J Trigonometric graphs in radians 550
+    Chapter 11 Review 555
+12 Probability 558
+    12A Probability and sample spaces 559
+    12B Sample space graphs and tree diagrams 569
+    12C Sets and venn diagrams 575
+    12D Venn diagrams and the addition theorem 583
+    12E Multi-stage experiments and the product rule 590
+    12F Probability tree diagrams 598
+    12G Conditional probability 604
+    Chapter 12 Review 615
+13 Discrete probability distributions 617
+    13A The language of probability distributions 618
+    13B Expected value 628
+    13C Variance and standard deviation 637
+    13D Sampling 646
+    Chapter 13 Review 661
+14 Combinatorics 664
+    14A Factorial notation 665
+    14B Counting ordered selections 670
+    14C Ordered selections and grouping 678
+    14D Ordered selections with identical elements 682
+    14E Counting unordered selections 687
+    14F Using counting in probability 696
+    14G Arrangements in a circle 703
+    14H The pigeonhole principle 708
+    Chapter 14 Review 714
+15 The binomial expansion and Pascal's triangle 716
+    15A Binomial expansions and Pascal's triangle 717
+    15B Further binomial expansions 724
+    15C The binomial theorem 728
+    15D Identities in Pascal's triangle 734
+    15E Enrichment - using the general term 740
+    Chapter 15 Review 743
+17 Further rates 745
+    16A Related rates 746
+    16B Exponential growth and decay 752
+    16C Modified natural growth and decay 760
+    Chapter 16 Review 767
+17 Further trigonometry 769
+    17A Restricting the domain 770
+    17B Defining the inverse trigonometric functions 777
+    17C Graphs involving inverse trigonometric functions 785
+    17D Trigonometric functions of compound angles 790
+    17E The double-angle formulae 796
+    17F The t-formulae 800
+    17G Products to sums 805
+    Chapter 17 Review 808
+Answers 812
