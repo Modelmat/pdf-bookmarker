@@ -8,6 +8,16 @@ Ghostscript, combined with a postscript instruction file, will, and this script 
 a table of contents tree from a flat tree (see the example table of contents text file)
 which is then converted into a `.ps` file to be added to a PDF through `gs`.
 
+## Installation
+1. Install the python requirements:
+```bash
+$ pip install anytree pdfrw
+```
+2. Install ghostscript. Ensure `gs` is in path.
+```bash
+$ sudo pacman -Syu ghostscript
+```
+
 ## Usage
 **TODO**: Document how to add custom level functions through python module.
 
