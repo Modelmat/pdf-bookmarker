@@ -26,5 +26,5 @@ $ python bookmarker.py examples/regex/programming-principles-and-practice-using-
     input.pdf out.pdf \
     --title="Programming Principles and Practice Using C++" \
     --author="Bjarne Stroustrup" \
-    --style=regex-1
+    --format=regex-1
 ```

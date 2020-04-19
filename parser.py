@@ -47,19 +47,19 @@ def regex_1_find_level(line: str) -> Tuple[LevelType, int]:
         return LevelType.LEAF, 0
 
 
-STYLES = {
+FORMATS = {
     "indents": indents_find_level,
     "regex-1": regex_1_find_level,
 }
 
 
-def get_valid_styles() -> List[str]:
-    return list(STYLES.keys())
+def get_valid_formats() -> List[str]:
+    return list(FORMATS.keys())
 
 
-def find_level(line: str, style: str) -> Tuple[LevelType, int]:
+def find_level(line: str, format: str) -> Tuple[LevelType, int]:
     """Returns the level the line should be on."""
-    return STYLES[style](line)
+    return FORMATS[format](line)
 
 
 def parse_entry(line: str, parent=None) -> Node:
@@ -70,7 +70,7 @@ def parse_entry(line: str, parent=None) -> Node:
     return Node(header_name, page=page_number, parent=parent)
 
 
-def parse_table_of_contents(table_of_contents: List[str], style: str) -> Node:
+def parse_table_of_contents(table_of_contents: List[str], format: str) -> Node:
     root = Node("root", page=None)
 
     levels = {-1: root}
@@ -78,7 +78,7 @@ def parse_table_of_contents(table_of_contents: List[str], style: str) -> Node:
 
     for entry in table_of_contents:
         if entry:
-            level_type, level = find_level(entry, style)
+            level_type, level = find_level(entry, format)
             
             if level_type == LevelType.ABSOLUTE:
                 levels[level] = parse_entry(entry, parent=levels[level - 1])

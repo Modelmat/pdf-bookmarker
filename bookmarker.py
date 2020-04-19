@@ -49,11 +49,11 @@ def parse_arguments() -> Tuple[List[str], str, str]:
         default="\n",
     )
     main_parser.add_argument(
-        "-s",
-        "--style",
+        "-f",
+        "--format",
         help="Format to determine how the table of contents is broken into different levels",
         default="indents",
-        choices=parser.get_valid_styles(),
+        choices=parser.get_valid_formats(),
     )
     main_parser.add_argument(
         "-p",
@@ -68,7 +68,7 @@ def parse_arguments() -> Tuple[List[str], str, str]:
         args.table_of_contents.split(args.toc_delimiter),
         args.input_path,
         args.output_path,
-        args.style,
+        args.format,
         args.print_tree,
         args.title,
         args.author,
@@ -79,7 +79,7 @@ def main(
     table_of_contents: List[str],
     input_path: str,
     output_path: str,
-    style: Optional[str] = "indents",
+    format: Optional[str] = "indents",
     print_tree: Optional[bool] = False,
     title: Optional[str] = None,
     author: Optional[str] = None,
@@ -94,7 +94,7 @@ def main(
         The path to the original unbookmarked PDF
     output_path : str
         The path to write the bookmarked PDF to
-    style : Optional[str] = "indents"
+    format : Optional[str] = "indents"
         Format to determine how the table of contents is broken into different levels
     print_tree : Optional[bool] = False
         Prints out the bookmark tree rather than add to PDF
@@ -103,7 +103,7 @@ def main(
     author : Optional[str] = None
         The author is the book to add into PDF metadata
     """
-    tree = parser.parse_table_of_contents(table_of_contents, style)
+    tree = parser.parse_table_of_contents(table_of_contents, format)
 
     if print_tree:
         parser.print_node_tree(tree)
