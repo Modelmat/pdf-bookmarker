@@ -22,7 +22,6 @@ def indents_find_level(line: str) -> Tuple[LevelType, int]:
     return LevelType.ABSOLUTE, (len(line) - len(line.lstrip())) // SPACES_PER_LEVEL
 
 
-
 def regex_1_find_level(line: str) -> Tuple[LevelType, int]:
     if re.match(r"^(Part)\s", line):
         # This should always be top level
@@ -36,7 +35,7 @@ def regex_1_find_level(line: str) -> Tuple[LevelType, int]:
         # | |-Part
         # | | |- Appendix
         return LevelType.HEADER, 0
-    elif (m := re.match(r"^((?:\w+\.)+)\w+\s", line)):
+    elif (m := re.match(r"^((?:\w+\.)+)\w+\s", line)) :
         # This is relative to the last child
         # 0 is same level, 1 is below
         # in the style of X.X (so 1 -> child)
@@ -79,21 +78,21 @@ def parse_table_of_contents(table_of_contents: List[str], format: str) -> Node:
     for entry in table_of_contents:
         if entry:
             level_type, level = find_level(entry, format)
-            
+
             if level_type == LevelType.ABSOLUTE:
                 levels[level] = parse_entry(entry, parent=levels[level - 1])
                 last_header = level
-                
+
             elif level_type == LevelType.HEADER:
                 abs_level = last_header + level
                 levels[abs_level] = parse_entry(entry, parent=levels[abs_level - 1])
                 last_header = last_child = abs_level
-                
+
             elif level_type == LevelType.CHILD:
                 abs_level = last_header + level
                 levels[abs_level] = parse_entry(entry, parent=levels[abs_level - 1])
                 last_child = abs_level
-                
+
             elif level_type == LevelType.LEAF:
                 parse_entry(entry, parent=levels[level - 1])
                 last_header = last_child = 0

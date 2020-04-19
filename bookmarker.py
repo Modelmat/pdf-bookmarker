@@ -37,8 +37,7 @@ def parse_arguments() -> Tuple[List[str], str, str]:
         "input_path", help="The original unbookmarked PDF", type=is_valid_file
     )
     main_parser.add_argument(
-        "output_path",
-        help="The path to write the bookmarked PDF to",
+        "output_path", help="The path to write the bookmarked PDF to",
     )
     main_parser.add_argument("--title", help="The book title", default=None)
     main_parser.add_argument("--author", help="The book author", default=None)
@@ -62,6 +61,10 @@ def parse_arguments() -> Tuple[List[str], str, str]:
         action="store_true",
         default=False,
     )
+    main_parser.add_argument(
+        "--pdfmarks_save_path",
+        help="The path to save the pdfmarks. If not supplied, a temp file will be created.",
+    )
 
     args = main_parser.parse_args()
     return (
@@ -72,6 +75,7 @@ def parse_arguments() -> Tuple[List[str], str, str]:
         args.print_tree,
         args.title,
         args.author,
+        args.pdfmarks_save_path,
     )
 
 
@@ -83,6 +87,7 @@ def main(
     print_tree: Optional[bool] = False,
     title: Optional[str] = None,
     author: Optional[str] = None,
+    pdfmarks_save_path: Optional[str] = None,
 ):
     """Add bookmarks to a PDF from a table of contents
     
@@ -102,6 +107,8 @@ def main(
         The title of the book to add into PDF metadata
     author : Optional[str] = None
         The author is the book to add into PDF metadata
+    pdfmarks_save_path : Optional[str] = None
+        The path to save the pdfmarks. If not supplied, a temp file will be created.
     """
     tree = parser.parse_table_of_contents(table_of_contents, format)
 
@@ -110,10 +117,18 @@ def main(
         return
 
     page_numbers = pdfmarker.get_page_numbers(input_path)
-    pdfmarks = pdfmarker.generate_pdfmarks(tree, page_numbers, title=title, author=author)
+    pdfmarks = pdfmarker.generate_pdfmarks(
+        tree, page_numbers, title=title, author=author
+    )
 
-    with tempfile.NamedTemporaryFile(mode="w") as fp:
+    file_context_manager = (
+        open(pdfmarks_save_path, "w")
+        if pdfmarks_save_path
+        else tempfile.NamedTemporaryFile(mode="w")
+    )
+    with file_context_manager as fp:
         fp.write(pdfmarks)
+        fp.flush()
 
         subprocess.run(
             [

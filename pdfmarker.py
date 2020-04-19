@@ -1,4 +1,5 @@
 from anytree import Node
+import codecs
 from operator import getitem
 from pdfrw import PdfReader, PdfArray
 from roman import to_roman
@@ -7,28 +8,28 @@ from typing import List, Optional
 
 
 PREFACE_FORMAT = """\
-[ /Title ({title})
-  /Author ({author})
+[ /Title {title}
+  /Author {author}
   /DOCINFO pdfmark
 
 """
 TITLE_PREFACE_FORMAT = """\
-[ /Title ({title})
+[ /Title {title}
   /DOCINFO pdfmark
 
 """
 AUTHOR_PREFACE_FORMAT = """\
-[ /Author ({author})
+[ /Author {author}
   /DOCINFO pdfmark
 
 """
 ENTRY_FORMAT = """\
-[ /Title ({name}) /Page {page} /OUT pdfmark
+[ /Title {name} /Page {page} /OUT pdfmark
 """
 # negative numbers have all the entries closed by default
 # positive numbers have them open by default
 HEADER_FORMAT = """\
-[ /Count -{number_of_children} /Title ({name}) /Page {page} /OUT pdfmark
+[ /Count -{number_of_children} /Title {name} /Page {page} /OUT pdfmark
 """
 
 
@@ -105,6 +106,47 @@ def get_page_numbers(input_pdf_path: str, offset: int = 0) -> List[str]:
         return [str(i + offset) for i in range(1, number_pages + 1)]
 
 
+# From https://github.com/larrycai/scripts/blob/master/pdfbokmark/pdf-merge.py#L292
+def pdfmark_unicode(string):
+    r"""
+    Not strictly reversible; ascii text cannot be unreversed
+
+    >>> pdfmark_unicode("ascii text with ) paren")
+    "(ascii text with \\) paren)"
+    >>> pdfmark_unicode("\u03b1\u03b2\u03b3")
+    "<FEFF03B103B203B3>"
+    """
+    try:
+        ascii = string.encode("ascii")
+    except UnicodeEncodeError:
+        b = codecs.BOM_UTF16_BE + string.encode("utf-16-be")
+        return "<{}>".format("".join("{:02X}".format(byte) for byte in b))
+    else:
+        # escape special characters
+        for a, b in [
+            ("\\", "\\\\"),
+            ("(", "\\("),
+            (")", "\\)"),
+            ("\n", "\\n"),
+            ("\t", "\\t"),
+        ]:
+            string = string.replace(a, b)
+        return "({})".format(string)
+
+
+def pdfmark_unicode_decode(string):
+    r"""
+    >>> pdfmark_unicode_decode(pdfmark_unicode(u"\u03b1\u03b2\u03b3"))
+    u"\u03b1\u03b2\u03b3"
+    """
+    if not (string.startswith("<FEFF") and string.endswith(">")):
+        raise ValueError("Invalid input string '{}'".format(string))
+
+    string = string.strip("<>")
+    parts = (string[i : i + 2] for i in range(0, len(string), 2))
+    return bytes(int(s, 16) for s in parts).decode("utf-16")
+
+
 def generate_pdfmarks(
     root_node: Node,
     page_numbers: List[str],
@@ -116,16 +158,18 @@ def generate_pdfmarks(
         output = []
 
         if author is not None and title is not None:
-            output.append(PREFACE_FORMAT.format(title=title, author=author))
+            output.append(
+                PREFACE_FORMAT.format(
+                    title=pdfmark_unicode(title), author=pdfmark_unicode(author)
+                )
+            )
 
         elif author is not None:
             # hence title must not exist
-            output.append(AUTHOR_PREFACE_FORMAT.format(author=author))
+            output.append(AUTHOR_PREFACE_FORMAT.format(author=pdfmark_unicode(author)))
 
         elif title is not None:
-            output.append(TITLE_PREFACE_FORMAT.format(title=title))
-
-    output = output or [PREFACE_FORMAT.format(title=title, author=author)]
+            output.append(TITLE_PREFACE_FORMAT.format(title=pdfmark_unicode(title)))
 
     for node in root_node.children:
         # purely a cosmetic thing so the generated file is readable
@@ -136,13 +180,15 @@ def generate_pdfmarks(
             output.append(
                 HEADER_FORMAT.format(
                     number_of_children=len(node.children),
-                    name=node.name,
+                    name=pdfmark_unicode(node.name),
                     page=page_number,
                 )
             )
             generate_pdfmarks(node, page_numbers, output=output)
             output.append("\n")
         else:
-            output.append(ENTRY_FORMAT.format(name=node.name, page=page_number))
+            output.append(
+                ENTRY_FORMAT.format(name=pdfmark_unicode(node.name), page=page_number)
+            )
 
     return "".join(output)
