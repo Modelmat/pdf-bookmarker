@@ -5,7 +5,7 @@ from typing import List, Tuple, Optional
 import os
 import tempfile
 import subprocess
-import parser
+import toc_parser as parser
 import pdfmarker
 
 
