@@ -52,7 +52,7 @@ def parse_page_labels(page_labels: PdfArray, number_pages: int) -> List[str]:
         #   /a - lowercase letters (a-z)
         # /P (optional) - page number prefix
         # /St (optional) - the value of the first page number in the range (default: 1)
-        page_offset = options.St or 1
+        page_offset = int(options.St or 1)
         page_range = range(page_offset, (stop - start) + 1)
 
         option_mapping = {
