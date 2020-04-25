@@ -42,12 +42,6 @@ def parse_arguments() -> Tuple[List[str], str, str]:
     main_parser.add_argument("--title", help="The book title", default=None)
     main_parser.add_argument("--author", help="The book author", default=None)
     main_parser.add_argument(
-        "-t",
-        "--toc_delimiter",
-        help="What to split the table of contents file by (default: \\n)",
-        default="\n",
-    )
-    main_parser.add_argument(
         "-f",
         "--format",
         help="Format to determine how the table of contents is broken into different levels",
@@ -68,7 +62,7 @@ def parse_arguments() -> Tuple[List[str], str, str]:
 
     args = main_parser.parse_args()
     return (
-        args.table_of_contents.split(args.toc_delimiter),
+        args.table_of_contents.split("\n"),
         args.input_path,
         args.output_path,
         args.format,
