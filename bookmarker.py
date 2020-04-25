@@ -2,6 +2,7 @@ from anytree import Node, RenderTree
 import re
 from gooey import Gooey, GooeyParser
 from typing import List, Tuple, Optional
+import platform
 import os
 import tempfile
 import subprocess
@@ -96,7 +97,7 @@ def main(
     pdfmarks_save_path: Optional[str] = None,
 ):
     """Add bookmarks to a PDF from a table of contents
-    
+
     Parameters
     ----------
     table_of_contents : List[str]
@@ -142,7 +143,7 @@ def main(
 
         process = subprocess.Popen(
             [
-                "gs",
+                "gs" if platform.system() != "Windows" else "gswin64",
                 "-dBATCH",
                 "-dNOPAUSE",
                 "-sDEVICE=pdfwrite",
@@ -172,7 +173,7 @@ def main(
 
         # subprocess.run(
         # [
-        # "gs",
+        # "gs" if platform.system() != "Windows" else "gswin64",
         # "-dBATCH",
         # "-dNOPAUSE",
         # "-sDEVICE=pdfwrite",
