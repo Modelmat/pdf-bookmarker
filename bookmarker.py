@@ -1,10 +1,11 @@
 from anytree import Node, RenderTree
 import re
-import argparse
+from gooey import Gooey, GooeyParser
 from typing import List, Tuple, Optional
 import os
 import tempfile
 import subprocess
+import sys
 import toc_parser as parser
 import pdfmarker
 
@@ -24,20 +25,31 @@ def file_contents(arg):
         raise argparse.ArgumentTypeError("The file {0} does not exist".format(arg))
 
 
+@Gooey(
+    progress_regex=r"^\[progress\]: (?P<current>\d+)/(?P<total>\d+)$",
+    hide_progress_msg=True,
+    progress_expr="current / total * 100",
+)
 def parse_arguments() -> Tuple[List[str], str, str]:
-    main_parser = argparse.ArgumentParser(
+    main_parser = GooeyParser(
         description="Add bookmarks to a PDF from a table of contents"
     )
     main_parser.add_argument(
         "table_of_contents",
         help="The path to the table of contents text file",
         type=file_contents,
+        widget="FileChooser",
     )
     main_parser.add_argument(
-        "input_path", help="The original unbookmarked PDF", type=is_valid_file
+        "input_path",
+        help="The original unbookmarked PDF",
+        type=is_valid_file,
+        widget="FileChooser",
     )
     main_parser.add_argument(
-        "output_path", help="The path to write the bookmarked PDF to",
+        "output_path",
+        help="The path to write the bookmarked PDF to",
+        widget="FileChooser",
     )
     main_parser.add_argument("--title", help="The book title", default=None)
     main_parser.add_argument("--author", help="The book author", default=None)
@@ -124,7 +136,11 @@ def main(
         fp.write(pdfmarks)
         fp.flush()
 
-        subprocess.run(
+        # Workaround hack for Gooey not supporting separate regexes for total
+        # or current
+        # see https://github.com/chriskiehl/Gooey/issues/547
+
+        process = subprocess.Popen(
             [
                 "gs",
                 "-dBATCH",
@@ -134,8 +150,38 @@ def main(
                 fp.name,
                 input_path,
             ],
-            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
         )
+
+        total = None
+        for line in process.stdout:
+            line = line.decode(sys.stdout.encoding)
+            print(line, end="")
+            if (m := re.match(r"^Processing pages 1 through (?P<total>\d+)\.$", line)) :
+                total = m.group("total")
+            elif (m := re.match(r"^Page (?P<current>\d+)$", line)) :
+                if total is not None:
+                    print(
+                        "[progress]: {current}/{total}".format(
+                            current=m.group("current"), total=total
+                        )
+                    )
+                else:
+                    raise Exception("This should not have happened")
+
+        # subprocess.run(
+        # [
+        # "gs",
+        # "-dBATCH",
+        # "-dNOPAUSE",
+        # "-sDEVICE=pdfwrite",
+        # "-sOutputFile={}".format(output_path),
+        # fp.name,
+        # input_path,
+        # ],
+        # check=True,
+        # )
 
 
 if __name__ == "__main__":
