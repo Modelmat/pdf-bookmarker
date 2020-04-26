@@ -8,6 +8,8 @@ Ghostscript, combined with a postscript instruction file, will, and this script 
 a table of contents tree from a flat tree (see the example table of contents text file)
 which is then converted into a `.ps` file to be added to a PDF through `gs`.
 
+![Screenshot of GUI](gui-example.png)
+
 ## Installation
 1. Install the python requirements:
 ```bash
