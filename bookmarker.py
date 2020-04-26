@@ -72,6 +72,13 @@ def parse_arguments() -> Tuple[List[str], str, str]:
         "--pdfmarks_save_path",
         help="The path to save the pdfmarks. If not supplied, a temp file will be created.",
     )
+    main_parser.add_argument(
+        "-r",
+        "--remove_bookmarks",
+        help="Whether to strip bookmarks from the input PDF.",
+        action="store_true",
+        default=False,
+    )
 
     args = main_parser.parse_args()
     return (
@@ -83,6 +90,7 @@ def parse_arguments() -> Tuple[List[str], str, str]:
         args.title,
         args.author,
         args.pdfmarks_save_path,
+        args.remove_bookmarks,
     )
 
 
@@ -95,6 +103,7 @@ def main(
     title: Optional[str] = None,
     author: Optional[str] = None,
     pdfmarks_save_path: Optional[str] = None,
+    remove_bookmarks: Optional[bool] = False,
 ):
     """Add bookmarks to a PDF from a table of contents
 
@@ -116,6 +125,8 @@ def main(
         The author is the book to add into PDF metadata
     pdfmarks_save_path : Optional[str] = None
         The path to save the pdfmarks. If not supplied, a temp file will be created.
+    remove_bookmarks : Optional[bool] = False
+        Whether to strip bookmarks from the input PDF.
     """
     tree = parser.parse_table_of_contents(table_of_contents, format)
 
@@ -142,15 +153,16 @@ def main(
         # see https://github.com/chriskiehl/Gooey/issues/547
 
         process = subprocess.Popen(
-            [
+            filter(lambda x: x is not None, [
                 "gs" if platform.system() != "Windows" else "gswin64",
                 "-dBATCH",
                 "-dNOPAUSE",
+                "-dNO_PDFMARK_OUTLINES" if remove_bookmarks else None,
                 "-sDEVICE=pdfwrite",
                 "-sOutputFile={}".format(output_path),
                 fp.name,
                 input_path,
-            ],
+            ]),
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
         )
