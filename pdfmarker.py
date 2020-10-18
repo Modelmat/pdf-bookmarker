@@ -64,8 +64,7 @@ def parse_page_labels(page_labels: PdfArray, number_pages: int) -> List[str]:
         }
 
         range_numbers = map(option_mapping.get(options.S), page_range)
-
-        if options.P is not None:
+        if options.P is not None and options.P != "()":
             range_numbers = map(lambda x: options.P + x, range_numbers)
 
         page_numbers.extend(range_numbers)
