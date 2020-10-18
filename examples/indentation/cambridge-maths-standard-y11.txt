@@ -1,0 +1,170 @@
+About the author vii
+Introduction and overview viii
+Acknowledgements xii
+1 Preliminary preparation 1
+    1A Simplifying algebraic expressions 2
+    1B Index laws 5
+    1C Expanding algebraic expressions 11
+    1D Pythagoras’ theorem 15
+    1E Perimeter 18
+    1F Area 23
+    1G Simple interest 29
+    1H Compound interest 33
+    1I Frequency tables 37
+    1J Mean, median and mode 40
+    Scale factors in similar figures Appendix 453
+    Chapter summary 43
+    Multiple-choice questions 44
+    Short-answer questions 45
+    Extended-response questions 46
+2 Earning and managing money 47
+    2A Salary and wages 48
+    2B Annual leave loading and bonuses 52
+    2C Overtime and special allowances 55
+    2D Commission 60
+    2E Piecework, royalties and income from government 63
+    2F Allowable tax deductions 67
+    2G Taxable income 70
+    2H Gross pay, net pay and deductions 74
+    2I Calculating tax 79
+    Chapter summary 85
+    Multiple-choice questions 86
+    Short-answer questions 87
+    Extended-response questions 88
+3 Formulae and equations 89
+    3A Substitution 90
+    3B Distance, speed and time 93
+    3C Linear equations 99
+    3D Solving equations after substitution 105
+    3E Changing the subject of the formula 109
+    3F Blood alcohol content 114
+    3G Medication 119
+    Chapter summary 123
+    Multiple-choice questions 124
+    Short-answer questions 125
+    Extended-response questions 126
+Measurement and energy 127
+    4A Units of measurement 128
+    4B Measurement errors 133
+    4C Standard form and significant figures 137
+    4D Food and nutrition 142
+    4E Energy consumption 146
+    Chapter summary 151
+    Multiple-choice questions 152
+    Short-answer questions 153
+    Extended-response question 154
+5 Relative frequency and probability 155
+    5A Language of probability 156
+    5B Definition of probability 161
+    5C Tables and tree diagrams 165
+    5D Range of probabilities 170
+    5E Complementary events 173
+    5F Relative frequency 176
+    5G Expected frequency 182
+    5H Blood types 186
+    Chapter summary 189
+    Multiple-choice questions 190
+    Short-answer questions 191
+    Extended-response question 192
+6 Perimeter, area and volume 193
+    6A Area of circles and sectors 194
+    6B Area of composite shapes 199
+    6C Trapezoidal rule 205
+    6D Surface area of right prisms 209
+    6E Surface area of cylinders and spheres 213
+    6F Surface area of pyramids and cones 217
+    6G Volume of right prisms 222
+    6H Volume of cylinders and spheres 226
+    6I Volume of pyramids and cones 230
+    6J Surface area and volume of composite solids 234
+    6K Capacity 238
+    Chapter summary 241
+    Multiple-choice questions 242
+    Short-answer questions 243
+    Extended-response questions 244
+Practice Paper 1 245
+7 Classifying and representing data 251
+    7A Data collection 252
+    7B Classification of data 257
+    7C Dot plots and stem-and-leaf plots 262
+    7D Grouped frequency tables 266
+    7E Cumulative frequency 269
+    7F Frequency and cumulative frequency graphs 272
+    7G Pareto charts 277
+    7H Motor vehicle statistics 281
+    7I Water usage 285
+    Chapter summary 289
+    Multiple-choice questions 290
+    Short-answer questions 291
+    Extended-response question 292
+8 Linear relationships 293
+    8A Graphing linear functions 294
+    8B Gradient and intercept 298
+    8C Gradient–intercept formula 302
+    8D Linear models 306
+    8E Direct variation 311
+    Chapter summary 315
+    Multiple-choice questions 316
+    Short-answer questions 317
+    Extended-response questions 318
+9 Interest and depreciation 319
+9A Simple interest 320
+    9B Simple interest graphs 326
+    9C Percentage increase or decrease 329
+    9D Calculating GST 332
+    9E Straight-line depreciation 336
+    Chapter summary 339
+    Multiple-choice questions 340
+    Short-answer questions 341
+    Extended-response questions 342
+10 Exploring and describing data 343
+    10A Measures of central tendency 344
+    10B Measures of spread 349
+    10C Outliers 355
+    10D Describing distributions 358
+    10E Comparing distributions 362
+    10F Parallel box-and-whisker plots 366
+    Chapter summary 371
+    Multiple-choice questions 372
+    Short-answer questions 373
+    Extended-response question 374
+11 Working with time 375
+    11A Units of time 376
+    11B Timetables 381
+    11C Latitude and longitude 387
+    11D Time zones 392
+    11E Time difference and local time 397
+    Chapter summary 401
+    Multiple-choice questions 402
+    Short-answer questions 403
+    Extended-response questions 404
+12 Budgeting and household expenses 405
+    12A Household bills 406
+    12B Purchasing a car 410
+    12C Car insurance 414
+    12D Stamp duty 417
+    12E Running and maintenance costs 420
+    12F Personal budget 425
+    Chapter summary 429
+    Multiple-choice questions 430
+    Short-answer questions 431
+    Extended-response question 432
+Practice Paper 2 433
+Formulae and data sheet 439
+Glossary 443
+Appendix: Scale factors in similar figures 453
+Answers 461
+    Chapter 1 461
+    Chapter 2 464
+    Chapter 3 466
+    Chapter 4 469
+    Chapter 5 471
+    Chapter 6 474
+    Practice Paper 1 476
+    Chapter 7 476
+    Chapter 8 482
+    Chapter 9 486
+    Chapter 10 488
+    Chapter 11 492
+    Chapter 12 494
+    Practice Paper 2 495

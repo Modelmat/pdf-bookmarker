@@ -1,0 +1,110 @@
+Acknowledgements vi
+Introduction vii
+1 Rates 1
+    1A Rates 2
+    1B The unitary method 5
+    1C Using rates to make comparisons 7
+    1D Speed as a rate 10
+    1E Distance–time graphs 13
+    1F Fuel consumption rate 16
+    1G Heart rate 19
+    1H Blood pressure 23
+    Chapter summary 27
+    Multiple-choice 28
+    Short-answer 29
+2 Networks and paths 31
+    2A Networks 32
+    2B Travelling a network 37
+    2C Drawing a network diagram 42
+    2D Eulerian and Hamiltonian walks 47
+    2E Network problems 51
+    2F Minimal spanning trees 55
+    2G Shortest path 60
+    Chapter summary 65
+    Multiple-choice 66
+    Short-answer 67
+3 Investments 69
+    3A Simple interest 70
+    3B Simple interest graphs 74
+    3C Compound interest – Future value 77
+    3D Compound interest – Present value 82
+    3E Compound interest graphs 84
+    3F Appreciation and inflation 87
+    Chapter summary 91
+    Multiple-choice 92
+    Short-answer 93
+4 Right-angled triangles 95
+    4A Pythagoras’ theorem 96
+    4B Applying Pythagoras’ theorem 99
+    4C Trigonometric ratios 101
+    4D Using the calculator in trigonometry 106
+    4E Finding an unknown side 110
+    4F Finding an unknown angle 114
+    4G Solving practical problems 117
+    4H Angles of elevation and depression 121
+    4I Compass and true bearings 125
+    Chapter summary 129
+    Multiple-choice 130
+    Short-answer 131
+5 Simultaneous linear equations 133
+    5A Linear functions 134
+    5B Linear models 139
+    5C Simultaneous equations – graphically 143
+    5D Simultaneous equation models 147
+    5E Break-even analysis 150
+    Chapter summary 153
+    Multiple-choice 154
+    Short-answer 155
+Practice Paper 1 157
+6 Further statistical analysis 163
+    6A Constructing a bivariate scatterplot 164
+    6B Using a bivariate scatterplot 168
+    6C Line of best fit 174
+    6D Interpolation and extrapolation 177
+    6E Statistical investigation 181
+    Chapter summary 185
+    Multiple-choice 186
+    Short-answer 187
+7 Scale drawing 189
+    7A Ratios 190
+    7B Dividing a quantity in a given ratio 193
+    7C Similarity and scale factors 196
+    7D Scale drawing 201
+    7E Plans and elevations 205
+    Chapter summary 213
+    Multiple-choice 214
+    Short-answer 215
+8 Depreciation and loans 217
+    8A Declining-balance depreciation 218
+    8B Reducing-balance loans 222
+    8C Credit cards 227
+    8D Credit card statements 230
+    8E Fees and charges for credit card usage 233
+    Chapter summary 235
+    Multiple-choice 236
+    Short-answer 237
+9 Graphs of practical situations 239
+    9A Graphs of exponential functions 240
+    9B Exponential models 243
+    9C Quadratic functions 246
+    9D Quadratic models 250
+    9E Graphs of reciprocal functions 253
+    9F Reciprocal models 256
+    9G Miscellaneous problems 260
+    Chapter summary 263
+    Multiple-choice 264
+    Short-answer 265
+Practice Paper 2 267
+Reference Sheet 273
+Glossary 275
+Answers 285
+    Chapter 1 285
+    Chapter 2 285
+    Chapter 3 290
+    Chapter 4 293
+    Chapter 5 295
+    Practice Paper 1 299
+    Chapter 6 300
+    Chapter 8 304
+    Chapter 9 305
+    Practice Paper 2 311
